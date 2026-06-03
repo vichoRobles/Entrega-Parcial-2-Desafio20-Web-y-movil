@@ -5,7 +5,7 @@ CREATE TYPE rol_usuario AS ENUM ('user', 'admin');
 CREATE TYPE tipo_proyecto AS ENUM ('residencial', 'comercial', 'infraestructura', 'público');
 CREATE TYPE estado_proyecto AS ENUM ('Planificado', 'En Progreso', 'Completado', 'Diseño', 'Licitación', 'Ejecución');
 CREATE TYPE estado_opinion AS ENUM ('Recibida', 'EN análisis por IA', 'Considerada', 'No recibida');
-CREATE TYPE tipo_sentimiento AS ENUM ('Positivo', 'Neutral', 'Negativo');
+CREATE TYPE tipo_sentimiento AS ENUM ('Enojo', 'Alegría', 'Preocupación');
 
 -- =========================================================================
 -- 2. CREACIÓN DE TABLAS
