@@ -2,6 +2,8 @@
 
 ## Instrucciones de uso
 
+### Instalación y ejecución básica
+
 Clonamos el repositorio
 
 ```bash
@@ -28,6 +30,32 @@ Corremos la aplicación, en este caso utilizamos el script 'npm run dev' debido 
 ```bash
 npm run dev
 ```
+
+### Base de datos (PostgreSQL & pgAdmin4)
+
+Este proyecto utiliza PostgreSQL para su base de datos relacional, para mayor facilidad utilizaremos la aplicación 'pgAdmin4'.
+
+```url
+https://www.pgadmin.org/download/pgadmin-4-windows/
+```
+
+1. **Abrimos pgAdmin4** y nos conectamos al servidor de PostgreSQL local.
+2. **Creamos una base de datos nueva:**
+   * Click derecho en **Databases** > **Create** > **Database...**
+   * Nombramos la base de datos (e.g., `municipality_db`) y clickeamos **Save**.
+3. **Abrimos la 'Query tool':**
+   * Click-derecho en la base de datos creada en el menú izquierdo.
+   * Seleccionar **Query Tool**.
+4. **Ejecutar el Schema:**
+   * Abrir el archivo `schema.sql` localizado en el repositorio del backend.
+   * Copiar los contenidos del archivo.
+   * Pegamos los contenidos en la herramienta Query Tool de pgAdmin4 de la base de datos creada.
+   * Clickeamos el boton **Execute/Refresh** (o presionar `F5`).
+5. **Verificamos la creación:**
+   * En el menú izquierdo, navegamos a `Your Database` > `Schemas` > `public` > `Tables`.
+   * Ahora deberian estar presentes las tablas `usuarios`, `proyectos`, y `opiniones` de manera visual en la base de datos.
+
+**Nota en las variables de entorno:** Es importante asegurarse que el archivo `.env` tenga las mismas credenciales de la base de datos que creamos anteriormente (Usuario, Contraseña, Puerto, y nombre de la base de datos).
 
 ## EP 2.1: Creación del servidor en Node.js con Express o Flask
 
