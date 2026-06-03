@@ -158,25 +158,34 @@ Es de gran utilidad ya que JSON es actualmente el estándar más usado para la c
   ]
 
 ```
-
-  
- ## EP 2.4: Consumo de la API REST desde Ionic con React utilizando fetch o Axios, implementando manejo de errores, interceptores y gestión de tokens JWT    
-
     
 
-    
+## EP 2.4: Consumo de la API REST desde Ionic con React utilizando fetch o Axios, implementando manejo de errores, interceptores y gestión de tokens JWT 
 
+ En esta etapa, se debe integrar el frontend que desarrollamos con Ionic junto a una API REST, esto permite que la aplicación móvil se comunique con el servidor para enviar o recibir información relevante. El objetivo de esto es hacer que la interfaz de usuario pueda consumir los servicios expuestos por la API de forma segura.
 
+ **Esta etapa involucra 5 acciones clave :** Consumo de la API REST, uso de fetch (en nuestro caso utilizamos fetch) , manejo de errores, interceptores y gestión de tokens JWT.
 
+ **1) Consumo de la API REST :** Realizar solicitudes HTTP desde la app hasta el servidor para obtener datos.
 
+ **2) Uso de Fetch :** Se usa una función de JavaScript para hacer las solicitudes HTTP.
 
+ Ejemplo del uso de fetch :
 
+ ```
 
+fetch("http://localhost:3000/libros")
+  .then(response => response.json())
+  .then(data => console.log(data));
 
+ ```
 
-## EP 2.3: Desarrollo de API REST con endpoints básicos. Manejo adecuado de códigos HTTP y respuestas en formato JSON estructurado.
+ **3) Manejo de errores :** Pueden ocurrer diferentes errores durante las comunicaciones que se deben manejar, estos errores principalmente se manejan en los códigos HTTP del 400 al 500 donde los más comunes son : Error 404 Recurso no encontrado, error 400 datos inválidos y error 500 ocurrió un error en el servidor.
 
-## EP 2.4: Consumo de la API REST desde Ionic con React utilizando fetch o Axios, implementando manejo de errores, interceptores y gestión de tokens JWT
+ **4) El uso de interceptores :** Es el uso de funciones que se ejecutan automáticamente antes de mandar la solicitud (req) o después de recibir la respuesta (res).
+
+ **5) Gestión de tokens JWT :** El JWT (JSON WEB TOKEN) es un mecanismo de autenticación basado en un token, cuando se inicia sesión, todo usuario recibe un token secreto y seguro que autentica que es él quien inició sesión.  
+
 
 ## EP 2.5: Implementación de autenticación con JWT con formulario de registro e inicio de sesión, rutas protegias en frontend, generación y validación de JWT, diferenciación por roles
 
