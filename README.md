@@ -2,15 +2,15 @@
 
 ## EP 2.1: Creación del servidor en Node.js con Express o Flask
 
-El servidor es la base para implementar un backend de una aplicación, y esto permite procesar incialmente los datos además de comunicarse con la base de datos posterior u otros servicios externos
+El servidor es la base para implementar un backend de una aplicación, y esto permite procesar inicialmente los datos además de comunicarse con la base de datos posterior u otros servicios externos.
 
 ## EP 2.2: Configuración y modelado de la base de datos relacional.
 
 Se configuraron y modelaron las bases de datos en PostgreSql, a continuación se explica la utilidad de la base de datos :
 
-**(1)** La utilidad principal de la base de datos está en definir una estructura sólida gracias al modelo entidad_relación, permitiendo así contar con un almacenamiento seguro de los datos. 
+**(1)** La utilidad principal de la base de datos está en definir una estructura sólida gracias al modelo entidad-relación, permitiendo así contar con un almacenamiento seguro de los datos. 
 
-**(2)** La base de datos es indispensable en el backend para validar identidades (ID) usando tanto llaves primearias (Primary key) como llaves foráneas (Foreign key).
+**(2)** La base de datos es indispensable en el backend para validar identidades (ID) usando tanto llaves primarias (Primary key) como llaves foráneas (Foreign key).
 
 **(3)** La base de datos permite gestionar los datos a través de el uso de múltiples comandos, los más importantes se detallan a continuación :
 
@@ -30,7 +30,7 @@ Una API REST (interfaz de programación de aplicaciones de transferencia de esta
 
 ### Uso de endpoints básicos (GET, POST, PUT/PATCH y DELETE)
 
-Los endpoints bpasicos son los principales puntos de acceso o rutas definidas en la API REST, los cuales permiten interactuar con los recursos del sistema mediante las solicitudes HTTP. Cada endpoint posee una operación específica utilizando los métodos HTTP para indicar la operación que se desea realizar sobre los datos.
+Los endpoints básicos son los principales puntos de acceso o rutas definidas en la API REST, los cuales permiten interactuar con los recursos del sistema mediante las solicitudes HTTP. Cada endpoint posee una operación específica utilizando los métodos HTTP para indicar la operación que se desea realizar sobre los datos.
 
 **GET :** Operación utilizada para obtener información
 
@@ -67,11 +67,13 @@ Consiste en usar correctamente los códigos de estado que son definidos por el p
 
 ### Respuestas en formato JSON estructurado 
 
-El objetivo de las respuestas en formato JSON estrcuturado es devolver la información de una API usando la sintáxis de JSON(Jaba Script Object Notation) adecuadamente.
+El objetivo de las respuestas en formato JSON estructurado es devolver la información de una API usando la sintaxis de JSON(JavaScript Object Notation) adecuadamente.
 
 Es de gran utilidad ya que JSON es actualmente el estándar más usado para la comunicación entre cliente-servidor, y esto se debe a su simplicidad y compatibilidad con muchos lenguajes de programación.
 
 **Ejemplo de la estructura de la respuesta JSON :**
+
+```
 
   "items": [
     {
@@ -95,6 +97,8 @@ Es de gran utilidad ya que JSON es actualmente el estándar más usado para la c
       "activo" : true
     }
   ]
+
+```
 
   
  ## EP 2.4: Consumo de la API REST desde Ionic con React utilizando fetch o Axios, implementando manejo de errores, interceptores y gestión de tokens JWT    
