@@ -1,5 +1,34 @@
 # Entrega-Parcial-2-Desafio20-Web-y-movil
 
+## Instrucciones de uso
+
+Clonamos el repositorio
+
+```bash
+git clone https://github.com/vichoRobles/Entrega-Parcial-2-Desafio20-Web-y-movil
+cd <tu-carpeta-backend>
+```
+Instalamos las dependencias
+```bash
+npm install
+```
+Configuramos las variables del entorno
+
+```
+PORT=3000
+DB_PORT=5432
+DB_USER=postgres
+DB_PASSWORD=tu_contraseña
+DB_HOST=localhost
+DB_NAME=nombre_de_la_db
+JWT_SECRET=jwt_secret
+```
+
+Corremos la aplicación, en este caso utilizamos el script 'npm run dev' debido a que permite prototipado rápido para las entregas.
+```bash
+npm run dev
+```
+
 ## EP 2.1: Creación del servidor en Node.js con Express o Flask
 
 El servidor es la base para implementar un backend de una aplicación, y esto permite procesar inicialmente los datos además de comunicarse con la base de datos posterior u otros servicios externos.
