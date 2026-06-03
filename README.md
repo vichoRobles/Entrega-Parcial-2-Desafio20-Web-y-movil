@@ -14,6 +14,13 @@ Instalamos las dependencias
 ```bash
 npm install
 ```
+Instalamos las dependencias de TypeScript y generamos su configuración
+```bash
+npm install --save-dev typescript ts-node @types/node @types/express @types/cors @types/jsonwebtoken @types/bcrypt @types/pg
+
+npx tsc --init
+```
+
 Configuramos las variables del entorno
 
 ```
