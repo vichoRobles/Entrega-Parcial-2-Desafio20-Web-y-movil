@@ -4,6 +4,8 @@
 
 El servidor es la base para implementar un backend de una aplicación, y esto permite procesar inicialmente los datos además de comunicarse con la base de datos posterior u otros servicios externos.
 
+Para la creación de Node.js utilizamos Express y también implementamos Cors para la seguridad, la creación del servidor está en el directorio "index.js".
+
 ## EP 2.2: Configuración y modelado de la base de datos relacional.
 
 Se configuraron y modelaron las bases de datos en PostgreSql, a continuación se explica la utilidad de la base de datos :
