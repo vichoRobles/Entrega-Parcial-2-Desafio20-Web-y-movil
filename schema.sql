@@ -24,7 +24,7 @@ CREATE TABLE usuarios (
     creado_en TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Tabla de Proyectos (Mapea tu Mapa Leaflet, Vista de Detalles y AdminPanel)
+-- Tabla de Proyectos 
 CREATE TABLE proyectos (
     id SERIAL PRIMARY KEY,
     nombre VARCHAR(150) NOT NULL,
@@ -40,7 +40,7 @@ CREATE TABLE proyectos (
     responsable_id INT REFERENCES usuarios(id) ON DELETE RESTRICT
 );
 
--- Tabla de Opiniones / Experiencias (Mapea el Formulario de participación y OpinionsPage)
+-- Tabla de Opiniones / Experiencias 
 CREATE TABLE opiniones (
     id SERIAL PRIMARY KEY,
     usuario_id INT NOT NULL REFERENCES usuarios(id) ON DELETE CASCADE,
