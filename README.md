@@ -24,5 +24,16 @@ Se configuraron y modelaron las bases de datos en PostgreSql, a continuación se
 
 (e) CREATE, INSERT, UPDATE, DELETE : Permiten un control total de los datos.
 
+## EP 2.3: Desarrollo de API REST con endpoints básicos. Manejo adecuado de códigos HTTP y respuestas en formato JSON estructurado.
+
+## EP 2.4: Consumo de la API REST desde Ionic con React utilizando fetch o Axios, implementando manejo de errores, interceptores y gestión de tokens JWT
+
+## EP 2.5: Implementación de autenticación con JWT con formulario de registro e inicio de sesión, rutas protegias en frontend, generación y validación de JWT, diferenciación por roles
+
+## EP 2.6: Validación de usuarios y manejo de sesiones con validación de inputs, Hash de contraseñas con bcrypt, Manejo seguro de credenciales, Protección básica contra inyección SQL.
+
+## EP 2.7: Pruebas funcionales siendo en Postman o Insomnia, Documentación de endpoints, Evidencia de pruebas.
+
+
 
 
