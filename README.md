@@ -222,7 +222,7 @@ Estos son mecanismos enfocados en la ciberseguridad utilizados en aplicaciones p
 
 **Ejemplos** : 
 
-email : Juan@gmail.com Es valido porque sigue el estandar x@gmail.(dominio de alto nivel, generalmente : .com .cl o .net usados por un usuario en Chile)
+email : Juan@gmail.com es válido porque sigue el estandar x@gmail.(dominio de alto nivel, generalmente : .com .cl o .net usados por un usuario en Chile)
 
 edad : abc No es válido, se espera que la edad ingresada sea un valor numérico en un rango plausible (generalmente de 0 a 120)
 
@@ -234,6 +234,20 @@ edad : abc No es válido, se espera que la edad ingresada sea un valor numérico
 **5) Protección básica contra la inyección SQL :** Esto se refiere a una protección contra uno de los ataques de internet más usados en internet que consiste introducir comandos SQL en los datos de entrada para alterar nuestras bases de datos de la aplicación, esto se solventa parametrizando funciones, es decir, tratar los datos como información y no como un código SQL.
 
 ## EP 2.7: Pruebas funcionales considerando pruebas en Postman o Insomnia, Documentación de endpoints, Evidencia de pruebas.
+
+**1) Pruebas funcionales :** Se muestran a continuación las pruebas funcionales realizadas las cuales permiten verificar que la aplicación funciona correctamente :
+
+
+
+**2) Documentación de endpoints :** A continuación se muestra el documento guía que explica cómo utilizar los distintos puntos de acceso de la API REST :
+
+
+
+**3) Evidencia de pruebas :** Se muestra la evidencia de que las funcionalidades del backend  fueron ejecutadas correctamente tal como se esperaba que funcionaran :
+
+
+
+
 
 
 
