@@ -1,5 +1,11 @@
 # Entrega-Parcial-2-Desafio20-Web-y-movil
 
+## Integrantes 
+
+Vicente Robles (Rol : Programador)
+Alfredo Escobar (Rol : Programador)
+Joaquín Rojas (Rol : Documentador)
+
 ## Instrucciones de uso
 
 ### Instalación y ejecución básica
@@ -194,11 +200,60 @@ fetch("http://localhost:3000/libros")
  **5) Gestión de tokens JWT :** El JWT (JSON WEB TOKEN) es un mecanismo de autenticación basado en un token, cuando se inicia sesión, todo usuario recibe un token secreto y seguro que autentica que es él quien inició sesión.  
 
 
-## EP 2.5: Implementación de autenticación con JWT con formulario de registro e inicio de sesión, rutas protegias en frontend, generación y validación de JWT, diferenciación por roles
+## EP 2.5: Implementación de autenticación con JWT con formulario de registro e inicio de sesión, rutas protegias en frontend, generación y validación de JWT, diferenciación por roles.
+
+La implementación de autenticación JWT (JSON Web Token) consiste en hacer un mecanismo de seguridad que permita corrroborar la identidad de los usuarios y controlar el acceso que tienen a los recursos, esto se hace principalmente a través de un formulario de registro e inicio de sesión y también hay otras buenas prácticas complementarias como lo son las rutas protegidas en el frontend, generación y validación JWT además de la diferenciación por roles, todo esto lo implementamos en el proyecto porque es de suma importancia mantener una autenticación segura para los usuarios a la hora de crear una app, a continuación se desglosan estas buenas prácticas :
+
+**1) Formularios de registros :** Estos formularios permiten que nuevos usuarios puedan ingresar a la app iniciando sesión.
+
+**2) Formularios de inicio de sesión :** Permiten que los usarios accedan al contenido iniciando sesión de manera segura y autenticada.
+
+**3) Rutas protegidas en el frontend :** Son las rutas protegidas las cuales restrigen acceso a distintas pantallas de la aplicación de las cuales no se tengan los permisos necesarios para acceder.
+
+**4) Generación del JWT :** Se genera un JWT el cual asegura la autenticación del usuario que se hizo previamente en inicio de sesión (se crea un token seguro que corrobora que es precisamente el usuario quien inició sesión)
+
+**5) Validación del JWT :** Se valida el token seguro cada vez que el usuario realiza una acción protegida (por ejemplo : cambiar de contraseña) y comprobando también que este token no haya expirado por exceso de tiempo sin re-autenticación.
+
+**6) Diferenciación por roles :** Se aplica un control de acceso basado en roles (RBAC) el cual establece que, dependiendo del rol de quien ingresa, tiene acceso a determinados archivos específicos ( Ejemplo : Los clientes tienen acceso a la visualización de una aplicación pero no a los códigos del sistema como si podría tener un administrador)
+
+**¿Por qué es de utilidad implementar la autenticación JWT? :** No es solo un detalle técnico, la autenticación con JWT garantiza que el usuario esté protegido a la hora de navegar por las pantallas de la aplicación, es un filtro básico pero poderoso que evita posibles suplantaciones de identidad indebidas, a primera vista, puede parecer molesto o incluso incómodo que el usuario necesite corroborar su identidad constantemente, incluso re-auteticar al estar mucho tiempo navegando por la app, pero es una medida de seguridad completamente necesaria para garantizar la privacidad del usuario.
 
 ## EP 2.6: Validación de usuarios y manejo de sesiones con validación de inputs, Hash de contraseñas con bcrypt, Manejo seguro de credenciales, Protección básica contra inyección SQL.
 
-## EP 2.7: Pruebas funcionales siendo en Postman o Insomnia, Documentación de endpoints, Evidencia de pruebas.
+Estos son mecanismos enfocados en la ciberseguridad utilizados en aplicaciones para proteger la información, autenticar usuarios y evitar principales ataques los cuales son medidas de seguridad mpas complejas que las vistas anteriormente y aportan un gran avanze en la seguridad de la aplicación, a continuación se detalla cada una de estas medidas de seguridad :
+
+**1) Validación de usuarios y manejo de sesiones :** Este mecanismo corrobora que una persona intentando acceder al sitio tenga las credenciales válidas y autorizadas para un ingreso seguro tanto para el usuario como para nuestra aplicación.
+
+**2) Uso de validación de inputs :** Las entradas o inputs son los datos que ingresa el usuario mediante los formularios o las solicitudes, esta validación que los datos cumplan ciertas reglas básicas antes de ser procesados 
+
+**Ejemplos** : 
+
+email : Juan@gmail.com es válido porque sigue el estandar x@gmail.(dominio de alto nivel, generalmente : .com .cl o .net usados por un usuario en Chile)
+
+edad : abc No es válido, se espera que la edad ingresada sea un valor numérico en un rango plausible (generalmente de 0 a 120)
+
+
+**3) Hash de contraseñas utilizando bcrypt :** Las contraseñas nunca deben almacenarse como texto simple, necesitan tener un seguro el cuál se denomina Hashing y permite la encriptación de contraseñas usando bcrypt el cual transforma una contraseña en una cadena cifrada irreversible la cual se conoce como hash.
+
+**4) Manejo segura de las credenciales :** Una credencial incluye usuario, contraseña, tokens JWT, claves API y secret keys (llaves secretas las cuales permiten seguridad), para mantenerlas de forma segura seguimos las siguientes buenas prácticas de codificación : No mostrar las credenciales en el código fuente, no almacenarlas como texto simple y utilizar cifrados para evitar que las credenciales sean expuestas.
+
+**5) Protección básica contra la inyección SQL :** Esto se refiere a una protección contra uno de los ataques de internet más usados en internet que consiste introducir comandos SQL en los datos de entrada para alterar nuestras bases de datos de la aplicación, esto se solventa parametrizando funciones, es decir, tratar los datos como información y no como un código SQL.
+
+## EP 2.7: Pruebas funcionales considerando pruebas en Postman o Insomnia, Documentación de endpoints, Evidencia de pruebas.
+
+**1) Pruebas funcionales :** Se muestran a continuación las pruebas funcionales realizadas las cuales permiten verificar que la aplicación funciona correctamente :
+
+
+
+**2) Documentación de endpoints :** A continuación se muestra el documento guía que explica cómo utilizar los distintos puntos de acceso de la API REST :
+
+
+
+**3) Evidencia de pruebas :** Se muestra la evidencia de que las funcionalidades del backend  fueron ejecutadas correctamente tal como se esperaba que funcionaran :
+
+
+
+
 
 
 
