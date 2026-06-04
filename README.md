@@ -257,6 +257,8 @@ A continuación se adjuntarán las pruebas realizadas en formato de imagenes, si
 
 ![alt text](recursos/obtenerproyectos.png)
 
+Para mayor información acerca de los endpoints de nuestra API, refierase al documento API_DOCS.md en el cual se detalla de mejor manera cada endpoint.
+
 
 
 
