@@ -1,7 +1,6 @@
 import { Pool } from 'pg';
 import dotenv from 'dotenv';
 
-
 dotenv.config();
 
 // Creamos una nueva conexión a la base de datos utilizando las credenciales del archivo .env
