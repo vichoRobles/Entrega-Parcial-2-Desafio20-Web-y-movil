@@ -241,18 +241,27 @@ edad : abc No es válido, se espera que la edad ingresada sea un valor numérico
 
 ## EP 2.7: Pruebas funcionales considerando pruebas en Postman o Insomnia, Documentación de endpoints, Evidencia de pruebas.
 
-**1) Pruebas funcionales :** Se muestran a continuación las pruebas funcionales realizadas las cuales permiten verificar que la aplicación funciona correctamente :
+Para el caso de las pruebas en Postman, en el repositorio se encuentra el archivo API Municipalidad.postman_collection.json el cual evidencia las requests que se realizaron y se ejecutaron de manera éxitosa con el backend funcionando.
 
+Cabe mencionar que luego de la prueba 1. Registrar Admin, se ejecutó la siguiente query en la base de datos de manera manual ya que si se deja la capacidad de registrar administradores por medio del endpoint sería una grave falta de seguridad, por lo que decidimos que sería mejor dejar la asignación de administradores a que sea de manera manual.
 
+```sql
+UPDATE usuarios SET rol = 'admin' WHERE correo = 'admin@muni.cl';
+```
 
-**2) Documentación de endpoints :** A continuación se muestra el documento guía que explica cómo utilizar los distintos puntos de acceso de la API REST :
+A continuación se adjuntarán las pruebas realizadas en formato de imagenes, siendo estas:
+- 1. Registrar admin (un usuario común en la práctica)
+- 2. Login (Generando nuestro Bearer Token)
+- 3. Crear proyecto (Entregamos el Bearer Token y se crea el proyecto)
+- 4. Obtener proyectos
 
+![alt text](recursos/registraradmin.png)
 
+![alt text](recursos/login.png)
 
-**3) Evidencia de pruebas :** Se muestra la evidencia de que las funcionalidades del backend  fueron ejecutadas correctamente tal como se esperaba que funcionaran :
+![alt text](recursos/crearproyecto.png)
 
-
-
+![alt text](recursos/obtenerproyectos.png)
 
 
 
