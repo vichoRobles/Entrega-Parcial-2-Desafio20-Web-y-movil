@@ -214,7 +214,26 @@ La implementación de autenticación JWT (JSON Web Token) consiste en hacer un m
 
 ## EP 2.6: Validación de usuarios y manejo de sesiones con validación de inputs, Hash de contraseñas con bcrypt, Manejo seguro de credenciales, Protección básica contra inyección SQL.
 
-## EP 2.7: Pruebas funcionales siendo en Postman o Insomnia, Documentación de endpoints, Evidencia de pruebas.
+Estos son mecanismos enfocados en la ciberseguridad utilizados en aplicaciones para proteger la información, autenticar usuarios y evitar principales ataques los cuales son medidas de seguridad mpas complejas que las vistas anteriormente y aportan un gran avanze en la seguridad de la aplicación, a continuación se detalla cada una de estas medidas de seguridad :
+
+**1) Validación de usuarios y manejo de sesiones :** Este mecanismo corrobora que una persona intentando acceder al sitio tenga las credenciales válidas y autorizadas para un ingreso seguro tanto para el usuario como para nuestra aplicación.
+
+**2) Uso de validación de inputs :** Las entradas o inputs son los datos que ingresa el usuario mediante los formularios o las solicitudes, esta validación que los datos cumplan ciertas reglas básicas antes de ser procesados 
+
+**Ejemplos** : 
+
+email : Juan@gmail.com Es valido porque sigue el estandar x@gmail.(dominio de alto nivel, generalmente : .com .cl o .net usados por un usuario en Chile)
+
+edad : abc No es válido, se espera que la edad ingresada sea un valor numérico en un rango plausible (generalmente de 0 a 120)
+
+
+**3) Hash de contraseñas utilizando bcrypt :** Las contraseñas nunca deben almacenarse como texto simple, necesitan tener un seguro el cuál se denomina Hashing y permite la encriptación de contraseñas usando bcrypt el cual transforma una contraseña en una cadena cifrada irreversible la cual se conoce como hash.
+
+**4) Manejo segura de las credenciales :** Una credencial incluye usuario, contraseña, tokens JWT, claves API y secret keys (llaves secretas las cuales permiten seguridad), para mantenerlas de forma segura seguimos las siguientes buenas prácticas de codificación : No mostrar las credenciales en el código fuente, no almacenarlas como texto simple y utilizar cifrados para evitar que las credenciales sean expuestas.
+
+**5) Protección básica contra la inyección SQL :** Esto se refiere a una protección contra uno de los ataques de internet más usados en internet que consiste introducir comandos SQL en los datos de entrada para alterar nuestras bases de datos de la aplicación, esto se solventa parametrizando funciones, es decir, tratar los datos como información y no como un código SQL.
+
+## EP 2.7: Pruebas funcionales considerando pruebas en Postman o Insomnia, Documentación de endpoints, Evidencia de pruebas.
 
 
 
