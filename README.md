@@ -194,7 +194,23 @@ fetch("http://localhost:3000/libros")
  **5) Gestión de tokens JWT :** El JWT (JSON WEB TOKEN) es un mecanismo de autenticación basado en un token, cuando se inicia sesión, todo usuario recibe un token secreto y seguro que autentica que es él quien inició sesión.  
 
 
-## EP 2.5: Implementación de autenticación con JWT con formulario de registro e inicio de sesión, rutas protegias en frontend, generación y validación de JWT, diferenciación por roles
+## EP 2.5: Implementación de autenticación con JWT con formulario de registro e inicio de sesión, rutas protegias en frontend, generación y validación de JWT, diferenciación por roles.
+
+La implementación de autenticación JWT (JSON Web Token) consiste en hacer un mecanismo de seguridad que permita corrroborar la identidad de los usuarios y controlar el acceso que tienen a los recursos, esto se hace principalmente a través de un formulario de registro e inicio de sesión y también hay otras buenas prácticas complementarias como lo son las rutas protegidas en el frontend, generación y validación JWT además de la diferenciación por roles, todo esto lo implementamos en el proyecto porque es de suma importancia mantener una autenticación segura para los usuarios a la hora de crear una app, a continuación se desglosan estas buenas prácticas :
+
+**1) Formularios de registros :** Estos formularios permiten que nuevos usuarios puedan ingresar a la app iniciando sesión.
+
+**2) Formularios de inicio de sesión :** Permiten que los usarios accedan al contenido iniciando sesión de manera segura y autenticada.
+
+**3) Rutas protegidas en el frontend :** Son las rutas protegidas las cuales restrigen acceso a distintas pantallas de la aplicación de las cuales no se tengan los permisos necesarios para acceder.
+
+**4) Generación del JWT :** Se genera un JWT el cual asegura la autenticación del usuario que se hizo previamente en inicio de sesión (se crea un token seguro que corrobora que es precisamente el usuario quien inició sesión)
+
+**5) Validación del JWT :** Se valida el token seguro cada vez que el usuario realiza una acción protegida (por ejemplo : cambiar de contraseña) y comprobando también que este token no haya expirado por exceso de tiempo sin re-autenticación.
+
+**6) Diferenciación por roles :** Se aplica un control de acceso basado en roles (RBAC) el cual establece que, dependiendo del rol de quien ingresa, tiene acceso a determinados archivos específicos ( Ejemplo : Los clientes tienen acceso a la visualización de una aplicación pero no a los códigos del sistema como si podría tener un administrador)
+
+**¿Por qué es de utilidad implementar la autenticación JWT? :** No es solo un detalle técnico, la autenticación con JWT garantiza que el usuario esté protegido a la hora de navegar por las pantallas de la aplicación, es un filtro básico pero poderoso que evita posibles suplantaciones de identidad indebidas, a primera vista, puede parecer molesto o incluso incómodo que el usuario necesite corroborar su identidad constantemente, incluso re-auteticar al estar mucho tiempo navegando por la app, pero es una medida de seguridad completamente necesaria para garantizar la privacidad del usuario.
 
 ## EP 2.6: Validación de usuarios y manejo de sesiones con validación de inputs, Hash de contraseñas con bcrypt, Manejo seguro de credenciales, Protección básica contra inyección SQL.
 
