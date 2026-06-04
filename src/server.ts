@@ -1,6 +1,7 @@
 import dotenv from 'dotenv';
 import express, { Request, Response } from 'express';
 import cors from 'cors';
+import { checkDatabaseConnection } from './config/db';
 
 // Variables de entorno
 dotenv.config();
@@ -16,6 +17,10 @@ app.get('/api/health', (req: Request, res: Response) => {
   res.status(200).json({ status: 'success', message: 'API corriendo correctamente!' });
 });
 
+
+
 app.listen(PORT, () => {
   console.log(`Server corriendo en el puerto ${PORT}`);
+
+  checkDatabaseConnection();
 });
