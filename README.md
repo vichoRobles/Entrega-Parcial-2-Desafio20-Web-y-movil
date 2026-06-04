@@ -74,7 +74,7 @@ https://www.pgadmin.org/download/pgadmin-4-windows/
 
 El servidor es la base para implementar un backend de una aplicación, y esto permite procesar inicialmente los datos además de comunicarse con la base de datos posterior u otros servicios externos.
 
-Para la creación de Node.js utilizamos Express y también implementamos Cors para la seguridad, la creación del servidor está en el directorio "index.js".
+Para la creación de Node.js utilizamos Express y también implementamos Cors para la seguridad, la creación del servidor está en el directorio "server.ts".
 
 ## EP 2.2: Configuración y modelado de la base de datos relacional.
 
