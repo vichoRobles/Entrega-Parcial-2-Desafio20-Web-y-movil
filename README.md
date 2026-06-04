@@ -1,5 +1,11 @@
 # Entrega-Parcial-2-Desafio20-Web-y-movil
 
+## Integrantes 
+
+Vicente Robles (Rol : Programador)
+Alfredo Escobar (Rol : Programador)
+Joaquín Rojas (Rol : Documentador)
+
 ## Instrucciones de uso
 
 ### Instalación y ejecución básica
